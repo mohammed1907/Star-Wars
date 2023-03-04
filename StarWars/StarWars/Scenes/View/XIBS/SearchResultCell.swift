@@ -2,7 +2,7 @@
 //  SearchResultCell.swift
 //  StarWars
 //
-//  Created by Omar Hassanein on 04/03/2023.
+//  Created by Farghaly on 04/03/2023.
 //
 
 import UIKit
