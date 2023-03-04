@@ -2,7 +2,7 @@
 //  NetworkError.swift
 //  StarWars
 //
-//  Created by Omar Hassanein on 03/03/2023.
+//  Created by Farghaly on 03/03/2023.
 //
 
 import Foundation

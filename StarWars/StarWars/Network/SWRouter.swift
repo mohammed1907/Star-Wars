@@ -2,7 +2,7 @@
 //  SWRouter.swift
 //  StarWars
 //
-//  Created by Omar Hassanein on 03/03/2023.
+//  Created by Farghaly on 03/03/2023.
 //
 
 import Foundation
@@ -44,9 +44,11 @@ enum SWRouter {
         components?.queryItems = []
         urlRequest.httpMethod = method.rawValue
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        if parameters != nil {
             components?.queryItems?.append(contentsOf: parameters!.map { (key, value) in
                 URLQueryItem(name: key, value: value as? String)
             })
+        }
         urlRequest.url = components?.url
 
         return urlRequest
